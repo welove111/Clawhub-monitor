@@ -1,5 +1,5 @@
-FROM ubuntu:22.04
-RUN apt-get update && apt-get install -y curl bash nodejs npm
+FROM node:20
+RUN apt-get update && apt-get install -y curl bash
 RUN npm install -g clawhub
 WORKDIR /app
 COPY clawhub-monitor-all.sh .
