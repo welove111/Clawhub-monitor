@@ -4,5 +4,6 @@ RUN npm install -g clawhub
 WORKDIR /app
 COPY clawhub-monitor-all.sh .
 COPY monitor-config.sh /root/clawhub-monitor.sh
-RUN chmod +x clawhub-monitor-all.sh
-CMD ["bash", "clawhub-monitor-all.sh"]
+COPY entrypoint.sh .
+RUN chmod +x clawhub-monitor-all.sh entrypoint.sh
+CMD ["bash", "entrypoint.sh"]
