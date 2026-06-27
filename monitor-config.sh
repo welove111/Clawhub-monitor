@@ -1,3 +1,3 @@
 WA_INSTANCE="instance181101"
 WA_TOKEN="9ql0ykjujgvtlaun"
-WA_GROUP=""
+WA_GROUP="120363409647242901@g.us"
